@@ -10,6 +10,13 @@ incorporated into my python application.
 2. run the requirements.py file to install necessary dependencies (todo)
 3. run stable-crack.py
 
-- Please issue anything if there is any bug/fault in the application.Since it's my first time building something like this.
 
-### Thank you
+- How does it work:
+1. You can create a wordlist file using the tool 'cupp' for using the dictionary attack.
+2. Incase you don't have a wordlist file, you can use the bruteforce tool and have some luck at finding the password :))
+
+I put 2 text files ('hasPass.txt' and 'noPass.txt'--> one of them has the password and the other doesn't, test out the script on the pre-existing zip file to understand how the tool works. 
+
+- Please issue if there is any bug/fault in the application. Since it's my first time building something like this, it would help me in the future.
+
+### Happy cracking :))
