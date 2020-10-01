@@ -16,7 +16,7 @@ incorporated into my python application.
 4. I put 2 text files ('hasPass.txt' and 'noPass.txt'--> one of them has the password and the other doesn't, test out the script on the pre-existing zip file to understand how the tool works.
 
 ### Compatibility
-Currently, the script works perfectly on linux, the windows version still has some bugs.if you want to use this script on windows, make sure to have WSL(Windows Subsystem for linux) and Ubuntu installed on your PC for bug-free scripting.
+All the scripts work on Linux and Windows provided the pre-requisites are fulfilled.
 
 - Please issue if there is any bug/fault in the application. Since it's my first time building something like this, it would help me in the future.
 
