@@ -3,7 +3,7 @@ import os
 def sysChecks():
     pip=os.system("pip3")
 
-    if pip == RuntimeError:
+    if pip == EnvironmentError:
         print('Please install PIP3 for the software to work :))')
         exit()
 
