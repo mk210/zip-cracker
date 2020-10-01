@@ -1,7 +1,10 @@
 import os
 
 def sysChecks():
-    pip=os.system("pip3")
+    try:
+        pip=os.system("pip3")
+    except Exception as e: print(e)
+    
     if pip==None:
         print("Please install PIP3 for the software to work :))")
         exit()        
