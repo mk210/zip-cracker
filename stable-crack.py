@@ -8,6 +8,8 @@ import zipfile
 from tqdm import tqdm
 import time
 
+# todo: Instead of Extracting files, do Open only!
+
 def gettingValues():
     print("Do you have a wordlist?[y]/[n]: ")
     checkWordList = input()
@@ -39,6 +41,14 @@ def theCrack(zip_file,wordlist,zippedForlater):
     # print the total number of passwords
     print("Total passwords to test:", n_words)
 
+    # Checking for corrupted zip files
+    if zip_file==zipfile.BadZipFile:
+        print("{} is a corrupted zip file.Repair the zip file before continuing".format(zip_file))
+        exit()
+    else:
+        pass
+
+    # doing the actual crack.
     with open(wordlist, "rb") as wordlist:
         for word in tqdm(wordlist, total=n_words, unit="word"):
             try:
