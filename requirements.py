@@ -12,7 +12,7 @@ def sysChecks():
     #     exit()
     try:
         pip=os.system("pip3")
-    except Exception as e: 
+    except IOError as e: 
         print("{}\nPlease install PIP3 for the software to work :))".format(e))
         exit()      
 
