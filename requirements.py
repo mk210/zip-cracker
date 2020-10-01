@@ -1,11 +1,16 @@
 import os
 
 def sysChecks():
-    try:
-        pip=os.system("pip3")
-    except Exception as e: 
-        print("{}\nPlease install PIP3 for the software to work :))".format(e))
-        exit()      
+    pip=os.system("pip3")
+    if pip == '\'pip3\' is not recognized as an internal or external command,operable program or batch file.':
+        print('Please install PIP3 for the software to work :))')
+        exit()
+        
+    # try:
+    #     pip=os.system("pip3")
+    # except Exception as e: 
+    #     print("{}\nPlease install PIP3 for the software to work :))".format(e))
+    #     exit()      
 
 def main():
     sysChecks()
