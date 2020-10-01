@@ -2,10 +2,14 @@ import os
 
 def sysChecks():
     pip=os.system("pip3")
-    if pip == '\'pip3\' is not recognized as an internal or external command,operable program or batch file.':
+
+    if pip == False:
         print('Please install PIP3 for the software to work :))')
         exit()
-        
+
+    # if pip == '\'pip3\' is not recognized as an internal or external command,operable program or batch file.':
+    #     print('Please install PIP3 for the software to work :))')
+    #     exit()
     # try:
     #     pip=os.system("pip3")
     # except Exception as e: 
