@@ -1,8 +1,8 @@
 import os
+import subprocess
 
 def sysChecks():
     pip=os.system("pip3")
-
     if subprocess.check_output(['\'pip3\' is not recognized as an internal or external command,operable program or batch file.']):
         print('Please install PIP3 for the software to work :))')
         exit()
