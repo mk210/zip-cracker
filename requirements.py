@@ -20,7 +20,7 @@ def sysChecks():
 def main():
     sysChecks()
     rarfile=os.system("pip3 install rarfile pyfiglet py-term")
-    if rarfile!=None:
+    if rarfile==0:
         os.system("pip3 install termcolor")
     else:
         print("Cannot install rarfile,pyfiglet,py-term.\nConsider installing the scripts seperately.")
