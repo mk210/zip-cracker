@@ -51,8 +51,7 @@ def theCrack(zip_file,wordlist,zippedForlater):
     with open(wordlist, "rb") as wordlist:
         for word in tqdm(wordlist, total=n_words, unit="word"):
             try:
-                data=zip_file.extractall(pwd=word.strip())
-                
+                zip_file.extractall(pwd=word.strip())
             except:
                 continue
             else:
