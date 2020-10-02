@@ -61,40 +61,6 @@ def theCrack(zip_file,wordlist,zippedForlater):
     found=0
     zyndra(found,zipped)
 
-# def theCrack(zip_file,wordlist,zippedForlater):
-#     zipped=zippedForlater
-#     # initialize the Zip File object
-#     zip_file = zipfile.ZipFile(zip_file)
-#     # count the number of words in this wordlist
-#     n_words = len(list(open(wordlist, "rb")))
-#     # print the total number of passwords
-#     print("Total passwords to test:", n_words)
-
-#     # Checking for corrupted zip files
-#     if zip_file==zipfile.BadZipFile:
-#         print("{} is a corrupted zip file.Repair the zip file before continuing".format(zip_file))
-#         exit()
-#     else:
-#         pass
-#     # doing the actual crack.
-#     with open(wordlist, "rb") as wordlist:
-#         for word in tqdm(wordlist, total=n_words, unit="word"):
-#             try:
-#                 data = zip_file.open(name='success-crack.txt', mode='r', pwd=word.strip())
-                
-#             if (data != ''):
-#                 break
-#             else:
-#                 print("[+] Password found:", word.decode().strip())
-
-#             except:
-#                 continue
-            
-
-#     print("[!] Password not found, try other wordlist.")
-#     found=0
-#     zyndra(found,zipped)
-
 def zyndra(found,zippedForlater):
     if found==0:
         print("Opening ZYDRA for bruteforcing...")
@@ -106,7 +72,6 @@ def zyndra(found,zippedForlater):
         time.sleep(3)
         openingZydra=os.system("python3 zydra.py -f {} -b {} -m 1 -x {}".format(zippedForlater,typeChar,maxChar))
         exit()
-
 
 
 def main():
